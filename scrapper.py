@@ -76,12 +76,12 @@ async def run_final_submission_scraper():
 
                         if data:
                             writer.writerow([data['address'], data['price'], data['agent'], data['company'], data['phone'], data['email'], data['dom'], link])
-                            print(f"✅ CLEANED: {data['address']} | {data['dom']}")
+                            print(f" CLEANED: {data['address']} | {data['dom']}")
 
                     except Exception:
                         continue
 
-            print("\n--- ✅ DATASET IS NOW PERFECT ---")
+            print("\n---  DATASET IS DONE ---")
 
         except Exception as e:
             print(f"Error: {e}")
